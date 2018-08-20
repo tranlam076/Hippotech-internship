@@ -1,16 +1,21 @@
-// scroll bar
-$(document).ready(function() {
-	$('#header a').click(function() {
-		$('.current').removeClass('current');
-		var posClick = $(this).attr('href'); 
-		var pos = $(posClick).position().top; 
-		$('[href="'+ posClick + '"]').addClass('current'); 
-		$('html, body').animate({scrollTop: pos + 20}, 1500);  
+// these functions using to make the contents located right position..
+$(document).ready(function($) {
+	var sidenavWidth = $('.sidenav-left').width();
+	$('.content-right').css({
+		'margin-left': sidenavWidth + 20
 	});
 
-	$('#header-menu-contact a').click(function() {
-		fetchContacts();
+	$('.sidenav-left').mouseenter(function(event) {
+		var sidenavWidth = $('.sidenav-left').width();
+		$('.content-right').css({
+			'margin-left': sidenavWidth + 20
+		});
+	});
+
+	$('.sidenav-left').mouseleave(function(event) {
+		var sidenavWidth = $('.sidenav-left').width();
+		$('.content-right').css({
+			'margin-left': sidenavWidth + 20
+		});
 	});
 });
-
-

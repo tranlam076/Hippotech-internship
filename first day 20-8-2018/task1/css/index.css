@@ -1,96 +1,72 @@
-/*-----------------------------make some properties back to defaults and setup fonts-----------------------------*/
-* {margin: 0; padding: 0;}
-h1,h2,h3,h4,h5,h6,ul,li,p {margin: 0; padding: 0;}
-li {list-style: none; float: left;}
-a{text-decoration: none}
-.row {
-	margin: 0px;
-	padding: 0px;
-}
-.container {
+/*begin header*/
+#header {
+	position: fixed;
+	top: 0px;
 	width: 100%;
-	padding: 0;
+	z-index: 1;
 }
-/*------------------body--------------*/
-body {
+
+.navbar-inverse {
 	background: #2C3E50;
-	margin: 0px;
-}
-/*-------------------header--------------*/
-
-.header-top {
-	width: 100%;
-	text-align: center;
-	height: 60px;
-	background: #2C3E50;
-}
-.header-logo h2 {
-	float: left;	
-	color: #fff;
-	padding: 20px;
+	border: none;
+	height: 51px;
 }
 
-/*-----------------------section---------------*/
-section .row{
-	background: #fff;
-	display: inline-block;
-	width: 100%;
+.navbar-inverse .navbar-brand {
+	color: #d6d6d6;
 }
-.section-left {
-	float: left;
-	background: #2C3E50;
-	color: #fff;
-	height: 1000px;
-}
-
-.section-left:hover .selection p{
-	display: inline;
+/*end header*/
+/*start sidenav-left*/
+.sidenav-left {
+	height: 100%;
+	top: 50px;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	background-color: #2C3E50;
 }
 
-.section-left:hover .dropdown p{
-	display: inline;
+.sidenav-left a:hover p{
+	color: #22836E;
+}
+.sidenav-left a:hover span{
+	color: #22836E;
+}
+
+.sidenav-left:hover p {
+	display: block;
 }
 
 .selection {
-	padding: 10px;
-	height: 30px;
-}
-
-.selection a:hover p {
-	color: #22836E;
+	margin: 5px;
+	padding: 5px;
+	height: 40px;
 }
 
 .selection p {
 	display: none;
 	color: #C8C7C2;
 	margin-top: 5px; 
-	margin-right: 20px; 
+	margin-right: 40px; 
 	float: left;
 	text-align: center;
 }
 
-.selection img {
+.selection span {
+	text-align: center;
+	color: #C8C7C2;
 	float: right;
+	margin-top: 8px; 
 	width: 30px;
+	height: 30px;
 }
 
-.section-right {
-	float: left;
-	background: #fff;
-}
-
-.section-right h2{
-	margin: 20px
-}
-
-.section-right p {
-	padding: 20px;
-}
-/*-------------------dropdown---------------------*/
+/*start dropdown*/
 
 .dropdown {
-    padding: 10px;
-	height: 30px;
+	margin: 5px;
+	padding: 5px;
+	height: 40px;
 }
 
 .dropdown p {
@@ -102,27 +78,36 @@ section .row{
 	text-align: center;
 }
 
-.dropdown img {
+.dropdown span {
+	text-align: center;
+	margin-top: 8px; 
+	color: #C8C7C2;
 	float: right;
 	width: 30px;
+	height: 30px;
 }
 
 .dropdown-content {
-	margin-top: 40px;
-    display: none;
-    min-width: 100px;
+	margin-top: 35px;
+	display: none;
+	min-width: 100px;
 }
 
 .dropdown-content a {
-    color: #5E6262;
-    padding: 6px 8px;
-    text-decoration: none;
-    display: block;
+	color: #5E6262;
+	padding: 6px 8px;
+	text-decoration: none;
+	display: block;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
-
 .dropdown:hover .dropdown-content {display: block;}
-
 .dropdown:hover {background: #1A242F}
+/*end dropdown*/
+/*end sidenav-left*/
 
+/*start content-right*/
+.content-right {
+	margin-top: 60px;
+}
+/*end content-right*/
