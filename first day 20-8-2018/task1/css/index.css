@@ -78,6 +78,7 @@
 	text-align: center;
 }
 
+
 .dropdown span {
 	text-align: center;
 	margin-top: 8px; 
@@ -86,6 +87,13 @@
 	width: 30px;
 	height: 30px;
 }
+
+.dropdown p span {
+	color: #C8C7C2;
+	width: 5px;
+	height: 5px;
+}
+
 
 .dropdown-content {
 	margin-top: 35px;
