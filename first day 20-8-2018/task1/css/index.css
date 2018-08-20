@@ -1,0 +1,128 @@
+/*-----------------------------make some properties back to defaults and setup fonts-----------------------------*/
+* {margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6,ul,li,p {margin: 0; padding: 0;}
+li {list-style: none; float: left;}
+a{text-decoration: none}
+.row {
+	margin: 0px;
+	padding: 0px;
+}
+.container {
+	width: 100%;
+	padding: 0;
+}
+/*------------------body--------------*/
+body {
+	background: #2C3E50;
+	margin: 0px;
+}
+/*-------------------header--------------*/
+
+.header-top {
+	width: 100%;
+	text-align: center;
+	height: 60px;
+	background: #2C3E50;
+}
+.header-logo h2 {
+	float: left;	
+	color: #fff;
+	padding: 20px;
+}
+
+/*-----------------------section---------------*/
+section .row{
+	background: #fff;
+	display: inline-block;
+	width: 100%;
+}
+.section-left {
+	float: left;
+	background: #2C3E50;
+	color: #fff;
+	height: 1000px;
+}
+
+.section-left:hover .selection p{
+	display: inline;
+}
+
+.section-left:hover .dropdown p{
+	display: inline;
+}
+
+.selection {
+	padding: 10px;
+	height: 30px;
+}
+
+.selection a:hover p {
+	color: #22836E;
+}
+
+.selection p {
+	display: none;
+	color: #C8C7C2;
+	margin-top: 5px; 
+	margin-right: 20px; 
+	float: left;
+	text-align: center;
+}
+
+.selection img {
+	float: right;
+	width: 30px;
+}
+
+.section-right {
+	float: left;
+	background: #fff;
+}
+
+.section-right h2{
+	margin: 20px
+}
+
+.section-right p {
+	padding: 20px;
+}
+/*-------------------dropdown---------------------*/
+
+.dropdown {
+    padding: 10px;
+	height: 30px;
+}
+
+.dropdown p {
+	display: none;
+	color: #C8C7C2;
+	margin-top: 5px; 
+	margin-right: 20px; 
+	float: left;
+	text-align: center;
+}
+
+.dropdown img {
+	float: right;
+	width: 30px;
+}
+
+.dropdown-content {
+	margin-top: 40px;
+    display: none;
+    min-width: 100px;
+}
+
+.dropdown-content a {
+    color: #5E6262;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover {background: #1A242F}
+
