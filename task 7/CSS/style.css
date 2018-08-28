@@ -1,0 +1,75 @@
+/*===============================================
+GLOBAL CSS
+===============================================*/
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*===============================================
+GENERAL CSS
+=================================================*/
+nav.navbar{
+	border: none;
+	border-radius: 0;
+	background: #202020;
+}
+
+.nav li a:focus, .nav li a:hover {
+	text-decoration: none;
+	background-color: #315020;
+}
+
+.nav .open a, .nav .open a:focus, .nav .open a:hover {
+	background-color: #202020;
+	border-color: none;
+}
+
+.nav li.dropdown a.dropdown-toggle {
+	margin-right: 30px;
+	color: #F06060;
+}
+
+ul.dropdown-menu {
+	border: none;
+	background-color: #202020;
+}
+
+ul.dropdown-menu div.dropdown-menu-heading h5 {
+	color: #fff;
+	margin-left: 15px;
+	font-size: 1.5em;
+}
+
+ul.dropdown-menu a {
+	margin: 8px 20px 4px 5px;
+}
+
+ul.dropdown-menu li a:hover, ul.dropdown-menu li a:focus {
+	background: #202020;
+	margin-left: 0px;
+	margin-right: 25px;
+}
+
+ul.dropdown-menu li a:hover span, ul.dropdown-menu li a:hover p {
+	color: #fff;
+}
+
+ul.dropdown-menu li a span {
+	display: inline;
+	color: #F06060;
+
+}
+ul.dropdown-menu li a p {
+	margin-left: 10px;
+	display: inline;
+	color: #F06060;
+}
+
+
+
+/*===============================================
+STYLE CSS
+=================================================*/
+
