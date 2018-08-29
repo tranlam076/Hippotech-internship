@@ -18,6 +18,7 @@ jQuery(document).ready(function($) {
 		ctx.strokeStyle = '#FBFDFE';
 		ctx.arc(centerX,centerY,innerCricle,0,2*Math.PI);
 		ctx.fill();
+		// Private Method
 		function draw(){
 			if (outerCricle <= 75) {
 				ctx.arc(centerX,centerY,outerCricle,0,2*Math.PI);
@@ -37,8 +38,7 @@ jQuery(document).ready(function($) {
 				outerCricle ++;
 			}
 		}
-
-		// Private Method
+		
 		function startAnimation(event){
 			if(this.textContent === "Start"){
 				cancelAnimate = setInterval (function() {
