@@ -1,0 +1,59 @@
+/*===============================================
+GLOBAL CSS
+===============================================*/
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+/*===============================================
+GENERAL CSS
+=================================================*/
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	min-width: 320px;
+	color: #777;
+}
+
+div.container {
+	border-top: 1px solid #eee;
+	border-bottom:1px solid #eee;
+	background:#fafafa;
+	margin:30px;
+	padding:20px 5px;
+}
+
+div.textArea {
+	padding :0 7px 0 5px;
+	max-width:900px;
+	margin:auto;
+}
+
+div.button {
+	float: right;
+	margin-right: 30px;
+}
+div.search-result {
+	margin-top: 200px;
+}
+
+textarea { 
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.02em;
+	width: 100%;
+	height: 29px;
+	padding: .3em .5em;
+	border: 1px solid #ddd;
+	font-size: .9em;
+	box-sizing: border-box;
+	margin: 0 0 20px;
+}
+
+/*===============================================
+STYLE CSS
+=================================================*/
+
