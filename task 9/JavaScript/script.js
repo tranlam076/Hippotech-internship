@@ -295,7 +295,7 @@ jQuery(document).ready(function($) {
 			$('#remove_all_tags').click(function() {
 				var tags = $('#textarea-tag-editor').tagEditor('getTags')[0].tags;
 				for (let i = 0 ;i < tags.length; i++) { 
-					$('#hero-demo').tagEditor('removeTag', tags[i]); 
+					$('#textarea-tag-editor').tagEditor('removeTag', tags[i]); 
 				}
 			});
 		}
